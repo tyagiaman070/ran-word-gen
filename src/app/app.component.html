@@ -1,0 +1,58 @@
+<div class="container-fluid row text-center" style="padding-top: 8%;">
+  <div class="col-lg-6 col-md-12">
+    <h1 class="text-white text-center mb-5">Generates Random Words</h1>
+    <div class="display-4 text-white">word Limit : {{ limit }}</div>
+    <span style="padding: 2%;">
+      <input
+        class="slider form-control-range"
+        type="range"
+        name=""
+        min="1"
+        max="100"
+        value="{{ limit }}"
+        id=""
+        (change)="handleSlider($event.target.value)"
+      />
+    </span>
+
+    <button (click)="generateWords()" class="btn btn-danger">Generate</button>
+    <!-- <ng-content select="selector"></ng-content> -->
+    <div *ngIf="words" class="card card-body">
+      <p class="display-4">
+        {{ words }}
+      </p>
+    </div>
+  </div>
+  <div class="col-lg-6 col-md-12">
+    <h1 class="text-white text-center mb-5">Generates Random Country Names</h1>
+    <div class="display-4 text-white">Country Limit : {{ countrylimit }}</div>
+    <span style="padding: 2%;">
+      <input
+        class="slider form-control-range"
+        type="range"
+        name=""
+        min="1"
+        max="25"
+        value="{{ countrylimit }}"
+        id=""
+        (change)="handleSliderCountry($event.target.value)"
+      />
+    </span>
+
+    <button (click)="generateCountry()" class="btn btn-danger">
+      Generate
+    </button>
+    <!-- <ng-content select="selector"></ng-content> -->
+    <div *ngIf="country" class="card card-body">
+      <p class="display-4">
+        {{ country }}
+      </p>
+    </div>
+  </div>
+
+  <div class="p-5 container-fluid text-white text-center display-5">
+    &copy; aman tyagi <br />
+    Developer Gmail:
+    <a href="mailto:tyagi.aman070@gmail.com">tyagi.aman070@gmail.com</a>
+  </div>
+</div>

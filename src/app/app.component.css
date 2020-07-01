@@ -1,0 +1,42 @@
+/* ############## Component CSS  ################# */
+
+.slider {
+  appearance: none;
+  height: 15px;
+  border-radius: 5%;
+  background: #919090;
+
+  outline: none;
+  margin: 15px;
+}
+.slider::-webkit-slider-thumb {
+  appearance: none;
+  height: 35px;
+  width: 35px;
+  background-color: red;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  appearance: none;
+  height: 35px;
+  width: 35px;
+  background-color: red;
+  border-radius: 50%;
+  cursor: pointer;
+}
+button {
+  border-radius: 5px;
+  padding: 10px 35px;
+  margin: 25px 0;
+}
+
+a {
+  color: red;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(255, 255, 255);
+}

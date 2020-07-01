@@ -1,0 +1,35 @@
+/* ############## Global CSS  ################# */
+
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  width: 100%;
+  /* background-image: url(./assets/bgc.jpg); */
+
+  background: linear-gradient(238.72deg, #9086ff 0%, #000000 100%),
+    linear-gradient(301.28deg, #ff0000 0%, #20002c 100%),
+    linear-gradient(121.28deg, #207a00 0%, #950000 100%),
+    linear-gradient(238.72deg, #00d1ff 0%, #000000 100%),
+    linear-gradient(238.72deg, #00d1ff 0%, #a80000 100%),
+    linear-gradient(58.72deg, #b80000 0%, #1b00c2 100%),
+    linear-gradient(125.95deg, #00e0ff 10.95%, #87009d 100%),
+    linear-gradient(263.7deg, #b60000 3.43%, #b100a0 96.57%),
+    linear-gradient(320.54deg, #800000 0%, #00c2ff 72.37%),
+    linear-gradient(130.22deg, #b9c900 18.02%, #8f73ff 100%);
+  background-blend-mode: color-dodge, difference, color-dodge, difference,
+    lighten, difference, color-dodge, difference, difference, normal;
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
